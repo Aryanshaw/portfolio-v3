@@ -17,20 +17,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aryan's portfolio",
+  title: "Aryan | Software developer",
   description: "This is aryan's portfolio",
 
   openGraph: {
-    title: "Aryan's portfolio",
+    title: "Aryan | Software developer",
     description: "This is aryan's portfolio",
     url: "https://talktome.com",
-    siteName: "Aryan's portfolio",
+    siteName: "Aryan | Software developer",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Aryan's portfolio",
+    title: "Aryan | Software developer",
     description: "This is aryan's portfolio",
   },
 };
