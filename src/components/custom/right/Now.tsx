@@ -5,7 +5,7 @@ function Now() {
     {
       label: "Working for",
       title: "Surgegrowth (surgegrowth.io)",
-      subtitle: "Shipping them this month a \nRLM-agent support",
+      subtitle: "Shipping multi-agent workflow support this month",
       bg: "bg-off-white",
       isDark: false,
       link: "https://surgegrowth.io",
@@ -33,9 +33,9 @@ function Now() {
       isDark: false,
     },
     {
-      label: "Factuality",
-      title: "I love designing",
-      subtitle: "If I can't design, I can't build.",
+      label: "DESIGNING",
+      title: "UI systems",
+      subtitle: "Can't build what I can't design",
       bg: "bg-off-white",
       isDark: false,
     },
@@ -78,7 +78,7 @@ function Now() {
         </div>
 
         {/* Title */}
-        <h3 className="font-serif text-2xl md:text-4xl lg:text-6xl text-text-primary leading-[1.05] tracking-tight">
+        <h3 className="font-serif text-text-primary leading-[1.05] tracking-tight" style={{ fontSize: "clamp(28px, 3.5vw, 42px)", letterSpacing: "-1px", fontWeight: 400 }}>
           <span className="block">What I'm doing</span>
           <span className="block italic text-text-secondary/90">
             right now.
@@ -90,7 +90,7 @@ function Now() {
           {nowItems.map((item, index) => (
             <div
               key={index}
-              className={`relative p-5 md:p-6 ${item.bg} ${
+              className={`relative p-7 md:p-9 ${item.bg} ${
                 item.isDark ? "text-white" : "text-text-primary"
               }`}
             >
@@ -102,7 +102,7 @@ function Now() {
               <div className="relative z-10">
                 {/* Eyebrow */}
                 <span
-                  className={`font-mono text-[8px] md:text-[9px] tracking-[0.3em] uppercase block mb-3 ${
+                  className={`font-mono text-[8px] md:text-[9px] tracking-[0.3em] uppercase block mb-5 ${
                     item.isDark ? "text-white/20" : "text-text-primary/60"
                   }`}
                 >
@@ -115,7 +115,7 @@ function Now() {
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`font-serif text-lg md:text-xl leading-tight mb-2 cursor-pointer no-underline ${
+                    className={`font-serif text-lg md:text-xl leading-tight mb-4 cursor-pointer no-underline ${
                       item.isDark ? "text-white" : "text-text-primary"
                     }`}
                     style={{ letterSpacing: "-0.3px" }}
@@ -124,7 +124,7 @@ function Now() {
                   </a>
                 ) : (
                   <h4
-                    className={`font-serif text-lg md:text-xl leading-tight mb-2 ${
+                    className={`font-serif text-lg md:text-xl leading-tight mb-4 ${
                       item.isDark ? "text-white" : "text-text-primary"
                     }`}
                     style={{ letterSpacing: "-0.3px" }}

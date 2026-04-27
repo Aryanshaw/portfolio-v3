@@ -57,13 +57,13 @@ function Work() {
     <div id="work" className="w-full flex flex-col gap-6">
       {/* Eyebrow */}
       <div className="flex items-center gap-3 mb-8 md:mb-12">
-        <span className="font-mono text-sm md:text-md tracking-[0.3em] uppercase text-text-muted/80">
+        <span className="font-mono uppercase text-text-muted/80" style={{ fontSize: "10px", letterSpacing: "2px" }}>
           Selected work
         </span>
       </div>
 
       {/* Main title */}
-      <h3 className="font-serif text-2xl md:text-4xl lg:text-6xl text-text-primary leading-[1.05] tracking-tight mb-8 md:mb-12">
+      <h3 className="font-serif text-text-primary leading-[1.05] tracking-tight mb-8 md:mb-12" style={{ fontSize: "clamp(28px, 3.5vw, 42px)", letterSpacing: "-1px", fontWeight: 400 }}>
         <span className="block">Things I've</span>
         <span className="block italic text-text-secondary/90">built & shipped</span>
       </h3>

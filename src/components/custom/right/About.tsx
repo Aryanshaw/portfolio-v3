@@ -15,8 +15,8 @@ function About() {
       subtitle: "hours dedicated",
     },
     {
-      title: "1",
-      subtitle: "AI-First mindset",
+      title: "3",
+      subtitle: "PRODUCTS IN PRODUCTION",
     },
   ];
 
@@ -24,13 +24,13 @@ function About() {
     <div className="w-full h-full bg-white relative px-6 md:px-16 lg:px-24 pt-12 md:pt-14 pb-10">
       {/* Eyebrow */}
       <div className="flex items-center gap-3 mb-6 md:mb-12">
-        <span className="font-mono text-[10px] md:text-sm tracking-[0.3em] uppercase text-text-muted/80">
+        <span className="font-mono uppercase text-text-muted/80" style={{ fontSize: "10px", letterSpacing: "2px" }}>
           About
         </span>
       </div>
 
       {/* Main title */}
-      <h3 className="font-serif text-xl md:text-4xl lg:text-6xl text-text-primary leading-[1.05] tracking-tight mb-6 md:mb-12">
+      <h3 className="font-serif text-text-primary leading-[1.05] tracking-tight mb-6 md:mb-12" style={{ fontSize: "clamp(28px, 3.5vw, 42px)", letterSpacing: "-1px", fontWeight: 400 }}>
         <span className="">Who I </span>
         <span className="italic text-text-secondary/90">actually</span>
         <span className=""> am</span>
@@ -55,7 +55,7 @@ function About() {
       </div>
 
       {/* text */}
-      <p className="font-serif text-sm md:text-lg lg:text-xl text-text-secondary/90 py-8 md:py-10 leading-relaxed">
+      <p className="font-sans text-text-secondary/90 py-8 md:py-10" style={{ fontSize: "13px", lineHeight: "1.85", color: "#666" }}>
         Fullstack engineer obsessed with building things that actually scale. I
         work at the intersection of distributed systems and AI — mostly thinking
         about how to make LLMs useful in production, not just in demos.

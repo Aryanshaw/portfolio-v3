@@ -7,10 +7,10 @@ function Sketches() {
     { id: 1, image: "/sketches/1.jpeg", title: "Portrait · charcoal" },
     { id: 2, image: "/sketches/2.jpeg", title: "Eye study" },
     { id: 3, image: "/sketches/3.jpeg", title: "City · ink" },
-    { id: 4, image: "/sketches/4.jpeg", title: "Study #4" },
-    { id: 5, image: "/sketches/5.jpeg", title: "Study #5" },
-    { id: 6, image: "/sketches/6.jpeg", title: "Study #6" },
-    { id: 7, image: "/sketches/7.jpeg", title: "Study #7" },
+    { id: 4, image: "/sketches/4.jpeg", title: "Hands · pencil" },
+    { id: 5, image: "/sketches/5.jpeg", title: "Skull · charcoal" },
+    { id: 6, image: "/sketches/6.jpeg", title: "Gesture · ink" },
+    { id: 7, image: "/sketches/7.jpeg", title: "Architecture · pencil" },
   ];
 
   return (
@@ -39,7 +39,7 @@ function Sketches() {
         </div>
 
         {/* Title */}
-        <h3 className="font-serif text-2xl md:text-4xl lg:text-6xl text-white leading-[1.05] tracking-tight">
+        <h3 className="font-serif text-white leading-[1.05] tracking-tight" style={{ fontSize: "clamp(28px, 3.5vw, 42px)", letterSpacing: "-1px", fontWeight: 400 }}>
           <span className="block">Drawn by hand,</span>
           <span className="block italic text-white/40">built in code.</span>
         </h3>

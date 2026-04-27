@@ -36,10 +36,10 @@ const FeaturedProject: React.FC<FeaturedProjectProps> = ({ index, project }: any
       </div>
       {/* Project details */}
       <div className="p-8 md:p-12 bg-white">
-        <h4 className="font-serif text-2xl md:text-3xl lg:text-4xl text-text-primary mb-4 leading-tight">
+        <h4 className="font-serif text-text-primary mb-4 leading-tight" style={{ fontSize: "20px", fontWeight: 400 }}>
           {project.title}
         </h4>
-        <p className="font-sans text-sm md:text-base text-text-muted leading-relaxed max-w-2xl mb-8">
+        <p className="font-sans max-w-2xl mb-8" style={{ fontSize: "12px", color: "#888", lineHeight: "1.8" }}>
           {project.description}
         </p>
         {/* Project stack */}

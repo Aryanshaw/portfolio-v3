@@ -71,7 +71,7 @@ function Cinema() {
             </div>
 
             {/* Title */}
-            <h3 className="font-serif text-2xl md:text-4xl lg:text-6xl text-text-primary leading-[1.05] tracking-tight">
+            <h3 className="font-serif text-text-primary leading-[1.05] tracking-tight" style={{ fontSize: "clamp(28px, 3.5vw, 42px)", letterSpacing: "-1px", fontWeight: 400 }}>
               <span className="block">Films that live</span>
               <span className="block italic text-text-secondary/90">
                 rent-free
@@ -82,7 +82,7 @@ function Cinema() {
 
           {/* Letterboxd link */}
           <a
-            href="https://letterboxd.com"
+            href="https://letterboxd.com/aryanshaw"
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono text-[10px] md:text-xs tracking-[0.2em] uppercase text-text-primary border-b border-text-ghost/50 pb-1 hover:border-text-primary transition-all duration-200"

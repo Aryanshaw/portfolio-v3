@@ -34,10 +34,10 @@ const MiniProject: React.FC<MiniProjectProps> = ({ index, project }) => {
             </span>
           )}
         </div>
-        <h4 className="font-serif text-xl md:text-2xl text-text-primary mb-4 leading-tight">
+        <h4 className="font-serif text-text-primary mb-4 leading-tight" style={{ fontSize: "20px", fontWeight: 400 }}>
           {project.title}
         </h4>
-        <p className="font-sans text-xs md:text-sm text-text-muted leading-relaxed line-clamp-3">
+        <p className="font-sans leading-relaxed line-clamp-3" style={{ fontSize: "12px", color: "#888", lineHeight: "1.8" }}>
           {project.description}
         </p>
 
