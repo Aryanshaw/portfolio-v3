@@ -14,6 +14,13 @@ function Work() {
       githubLink: "",
       mainTag: "AI Product Engineer",
       isMain: true,
+      callout: "Scoped LLM memory per board — context isolation across concurrent canvas sessions.",
+      underTheHood: [
+        "Chose Go for the backend — goroutines for cheap concurrency across per-session canvas state without Node's event loop bottlenecks",
+        "Scoped LLM memory per board using a Redis key-per-board-id pattern — context isolation so AI edits never bleed across boards",
+        "WebSocket sessions with reconnection logic and client-side canvas state diffing — users never lose work on disconnect",
+        "NL → canvas edit pipeline: parse intent → validate against board context → apply delta → stream confirmation back",
+      ],
     },
     {
       title: "ATREAN (Data + AI SaaS)",
@@ -25,6 +32,13 @@ function Work() {
       githubLink: "#",
       mainTag: "AI Architect & Backend Lead",
       isMain: false,
+      callout: "ClickHouse for OLAP + Pinecone for semantic — two databases, two jobs, neither compromised.",
+      underTheHood: [
+        "ClickHouse for OLAP queries — columnar storage gives sub-second aggregations on 100M+ row tables that would timeout in Postgres",
+        "Pinecone for semantic search — 512-token overlapping chunks, embedded with text-embedding-ada-002",
+        "LangGraph over flat LangChain chains — needed conditional branching and loop-back steps for decision intelligence workflows",
+        "Airbyte for ingestion pipelines — avoided writing custom connectors for 40+ data source types",
+      ],
     },
     {
       title: "Spark (Dating App)",
@@ -36,6 +50,13 @@ function Work() {
       githubLink: null,
       mainTag: "Backend & Realtime Systems",
       isMain: false,
+      callout: "SQS for persistence, Redis pub/sub for speed — decoupled delivery without losing messages.",
+      underTheHood: [
+        "AWS SQS as message queue backbone — decoupled send from deliver, gave us replay on failure without losing messages",
+        "Redis pub/sub for real-time delivery to online users — SQS handles persistence, Redis handles speed",
+        "Expo push notifications as offline fallback — if Redis finds no subscriber, job falls to SQS → FCM/APNs",
+        "MongoDB for message storage — flexible schema for text, media, and reactions without migration overhead",
+      ],
     },
     {
       title: "DeliveryPlus (Logistics SaaS)",
@@ -47,6 +68,12 @@ function Work() {
       githubLink: null,
       mainTag: "Logistics & Automation",
       isMain: false,
+      callout: "OCR pipeline processing WhatsApp-forwarded receipts at 2000+ agent scale.",
+      underTheHood: [
+        "OCR pipeline with Tecstract for receipt extraction from WhatsApp-forwarded images — handles skewed, low-res, partially cropped inputs",
+        "PostgreSQL with row-level locking for concurrent agent updates — prevents double-confirmation race conditions",
+        "Webhook-based WhatsApp form intake — media payloads queued for async OCR processing",
+      ],
     },
   ];
 

@@ -4,10 +4,11 @@ import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: "Hero", id: "hero" },
   { label: "Work", id: "work" },
+  { label: "Stack", id: "stack" },
   { label: "Sketches", id: "sketches" },
   { label: "Cinema", id: "cinema" },
+  { label: "Writing", id: "writing" },
   { label: "Now", id: "now" },
   { label: "Contact", id: "contact" },
 ];
@@ -44,8 +45,10 @@ function Navbar() {
     const allSections = [
       "hero",
       "work",
+      "stack",
       "sketches",
       "cinema",
+      "writing",
       "now",
       "contact",
     ];

@@ -60,6 +60,41 @@ function About() {
         work at the intersection of distributed systems and AI — mostly thinking
         about how to make LLMs useful in production, not just in demos.
       </p>
+
+      {/* GitHub contribution graph */}
+      <div
+        style={{
+          marginTop: "8px",
+          padding: "20px",
+          background: "#f7f6f3",
+          borderRadius: "4px",
+          border: "0.5px solid #e8e7e3",
+          marginBottom: "16px",
+        }}
+      >
+        <img
+          src="https://ghchart.rshah.org/Aryanshaw"
+          alt="Aryan's GitHub contribution graph"
+          style={{ width: "100%", filter: "invert(1) opacity(0.5)" }}
+        />
+        <a
+          href="https://github.com/Aryanshaw"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: "block",
+            marginTop: "10px",
+            fontFamily: "JetBrains Mono, monospace",
+            fontSize: "9px",
+            letterSpacing: "1px",
+            textTransform: "uppercase",
+            color: "#888",
+            textDecoration: "none",
+          }}
+        >
+          github.com/Aryanshaw ↗
+        </a>
+      </div>
     </div>
   );
 }

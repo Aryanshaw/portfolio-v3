@@ -7,6 +7,8 @@ import Sketches from "./right/Sketches";
 import Cinema from "./right/Cinema";
 import Now from "./right/Now";
 import Contact from "./right/Contact";
+import Stack from "./right/Stack";
+import Writing from "./right/Writing";
 
 function RightSide() {
   return (
@@ -35,11 +37,17 @@ function RightSide() {
           <About />
         </div>
 
+        {/* Stack section */}
+        <Stack />
+
         {/* Sketches section */}
         <Sketches />
 
         {/* Cinema section */}
         <Cinema />
+
+        {/* Writing section */}
+        <Writing />
 
         {/* Now section */}
         <Now />
