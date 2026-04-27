@@ -10,7 +10,7 @@ function Navbar() {
 
       {/* Links */}
       <div className="flex gap-6 md:gap-10">
-        {["Hero", "Work", "About"].map((item) => (
+        {["Hero", "Work", "About", "Contact"].map((item) => (
           <button
             key={item}
             className="font-mono text-[10px] md:text-xs uppercase tracking-wider text-text-primary transition-colors duration-200 cursor-pointer"

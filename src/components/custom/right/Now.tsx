@@ -3,11 +3,12 @@ import React from "react";
 function Now() {
   const nowItems = [
     {
-      label: "Building",
-      title: "AI Workflow v2",
-      subtitle: "Shipping this month\nMulti-agent support",
+      label: "Working for",
+      title: "Surgegrowth (surgegrowth.io)",
+      subtitle: "Shipping them this month a \nRLM-agent support",
       bg: "bg-off-white",
       isDark: false,
+      link: "https://surgegrowth.io",
     },
     {
       label: "Listening",
@@ -32,9 +33,9 @@ function Now() {
       isDark: false,
     },
     {
-      label: "Sketching",
-      title: "Portrait series",
-      subtitle: "12 studies in pencil",
+      label: "Factuality",
+      title: "I love designing",
+      subtitle: "If I can't design, I can't build.",
       bg: "bg-off-white",
       isDark: false,
     },
@@ -102,21 +103,35 @@ function Now() {
                 {/* Eyebrow */}
                 <span
                   className={`font-mono text-[8px] md:text-[9px] tracking-[0.3em] uppercase block mb-3 ${
-                    item.isDark ? "text-white/20" : "text-text-ghost/60"
+                    item.isDark ? "text-white/20" : "text-text-primary/60"
                   }`}
                 >
                   {item.label}
                 </span>
 
                 {/* Title */}
-                <h4
-                  className={`font-serif text-lg md:text-xl leading-tight mb-2 ${
-                    item.isDark ? "text-white" : "text-text-primary"
-                  }`}
-                  style={{ letterSpacing: "-0.3px" }}
-                >
-                  {item.title}
-                </h4>
+                {item.link ? (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`font-serif text-lg md:text-xl leading-tight mb-2 cursor-pointer no-underline ${
+                      item.isDark ? "text-white" : "text-text-primary"
+                    }`}
+                    style={{ letterSpacing: "-0.3px" }}
+                  >
+                    {item.title}
+                  </a>
+                ) : (
+                  <h4
+                    className={`font-serif text-lg md:text-xl leading-tight mb-2 ${
+                      item.isDark ? "text-white" : "text-text-primary"
+                    }`}
+                    style={{ letterSpacing: "-0.3px" }}
+                  >
+                    {item.title}
+                  </h4>
+                )}
 
                 {/* Subtitle */}
                 <p

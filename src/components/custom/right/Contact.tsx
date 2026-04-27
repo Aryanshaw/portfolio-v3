@@ -4,18 +4,18 @@ function Contact() {
   const contactLinks = [
     {
       name: "Email",
-      value: "aryan@email.com",
+      value: "aryan.shaw2702@email.com",
       href: "mailto:aryan@email.com",
     },
     {
       name: "GitHub",
-      value: "github.com/aryan-shaw",
-      href: "https://github.com/aryan-shaw",
+      value: "github.com/Aryanshaw",
+      href: "https://github.com/Aryanshaw",
     },
     {
       name: "LinkedIn",
       value: "linkedin.com/in/aryanshaw",
-      href: "https://linkedin.com/in/aryanshaw",
+      href: "https://www.linkedin.com/in/aryan-shaw-66784418b/",
     },
     {
       name: "Letterboxd",

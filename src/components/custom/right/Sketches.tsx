@@ -1,310 +1,16 @@
 import React from "react";
+import Image from "next/image";
 
 function Sketches() {
   const sketches = [
-    {
-      id: 1,
-      title: "Figure Study",
-      svg: (
-        <svg
-          viewBox="0 0 120 160"
-          style={{ width: "100%", display: "block" }}
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect width="120" height="160" fill="#111" />
-          <ellipse
-            cx="60"
-            cy="32"
-            rx="14"
-            ry="16"
-            fill="none"
-            stroke="#d8d4cc"
-            strokeWidth="0.7"
-            opacity="0.6"
-          />
-          <line
-            x1="60"
-            y1="48"
-            x2="60"
-            y2="100"
-            stroke="#d8d4cc"
-            strokeWidth="0.7"
-            opacity="0.5"
-          />
-          <line
-            x1="60"
-            y1="62"
-            x2="34"
-            y2="85"
-            stroke="#d8d4cc"
-            strokeWidth="0.6"
-            opacity="0.45"
-          />
-          <line
-            x1="60"
-            y1="62"
-            x2="86"
-            y2="80"
-            stroke="#d8d4cc"
-            strokeWidth="0.6"
-            opacity="0.45"
-          />
-          <line
-            x1="60"
-            y1="100"
-            x2="40"
-            y2="148"
-            stroke="#d8d4cc"
-            strokeWidth="0.6"
-            opacity="0.5"
-          />
-          <line
-            x1="60"
-            y1="100"
-            x2="80"
-            y2="148"
-            stroke="#d8d4cc"
-            strokeWidth="0.6"
-            opacity="0.5"
-          />
-        </svg>
-      ),
-    },
-    {
-      id: 2,
-      title: "Portrait · charcoal",
-      svg: (
-        <svg
-          viewBox="0 0 120 110"
-          style={{ width: "100%", display: "block" }}
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect width="120" height="110" fill="#131313" />
-          <ellipse
-            cx="60"
-            cy="52"
-            rx="28"
-            ry="34"
-            fill="none"
-            stroke="#c8c4bc"
-            strokeWidth="0.7"
-            opacity="0.55"
-          />
-          <ellipse
-            cx="46"
-            cy="47"
-            rx="6"
-            ry="4"
-            fill="none"
-            stroke="#c8c4bc"
-            strokeWidth="0.6"
-            opacity="0.6"
-          />
-          <ellipse
-            cx="74"
-            cy="47"
-            rx="6"
-            ry="4"
-            fill="none"
-            stroke="#c8c4bc"
-            strokeWidth="0.6"
-            opacity="0.6"
-          />
-          <circle cx="46" cy="47" r="2" fill="#c8c4bc" opacity="0.4" />
-          <circle cx="74" cy="47" r="2" fill="#c8c4bc" opacity="0.4" />
-          <path
-            d="M52 64 Q60 70 68 64"
-            fill="none"
-            stroke="#c8c4bc"
-            strokeWidth="0.6"
-            opacity="0.4"
-          />
-          <path
-            d="M32 38 Q46 18 60 22 Q74 18 88 38"
-            fill="none"
-            stroke="#c8c4bc"
-            strokeWidth="0.5"
-            opacity="0.35"
-          />
-        </svg>
-      ),
-    },
-    {
-      id: 3,
-      title: "Eye study",
-      svg: (
-        <svg
-          viewBox="0 0 120 130"
-          style={{ width: "100%", display: "block" }}
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect width="120" height="130" fill="#0e0e0e" />
-          <path
-            d="M12 65 Q60 30 108 65 Q60 100 12 65 Z"
-            fill="none"
-            stroke="#d8d4cc"
-            strokeWidth="0.8"
-            opacity="0.55"
-          />
-          <circle
-            cx="60"
-            cy="65"
-            r="20"
-            fill="none"
-            stroke="#d8d4cc"
-            strokeWidth="0.7"
-            opacity="0.45"
-          />
-          <circle
-            cx="60"
-            cy="65"
-            r="9"
-            fill="none"
-            stroke="#c8c4bc"
-            strokeWidth="0.6"
-            opacity="0.55"
-          />
-          <circle cx="60" cy="65" r="4" fill="#d8d4cc" opacity="0.25" />
-          <circle cx="66" cy="59" r="2" fill="#fff" opacity="0.12" />
-          <line
-            x1="24"
-            y1="52"
-            x2="20"
-            y2="42"
-            stroke="#d8d4cc"
-            strokeWidth="0.5"
-            opacity="0.35"
-          />
-          <line
-            x1="36"
-            y1="46"
-            x2="34"
-            y2="36"
-            stroke="#d8d4cc"
-            strokeWidth="0.5"
-            opacity="0.35"
-          />
-          <line
-            x1="50"
-            y1="42"
-            x2="50"
-            y2="32"
-            stroke="#d8d4cc"
-            strokeWidth="0.5"
-            opacity="0.35"
-          />
-          <line
-            x1="64"
-            y1="41"
-            x2="65"
-            y2="31"
-            stroke="#d8d4cc"
-            strokeWidth="0.5"
-            opacity="0.35"
-          />
-          <line
-            x1="78"
-            y1="44"
-            x2="81"
-            y2="34"
-            stroke="#d8d4cc"
-            strokeWidth="0.5"
-            opacity="0.35"
-          />
-        </svg>
-      ),
-    },
-    {
-      id: 4,
-      title: "City · ink",
-      svg: (
-        <svg
-          viewBox="0 0 120 100"
-          style={{ width: "100%", display: "block" }}
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect width="120" height="100" fill="#0f0f0f" />
-          <rect
-            x="6"
-            y="48"
-            width="14"
-            height="46"
-            fill="none"
-            stroke="#777"
-            strokeWidth="0.5"
-            opacity="0.45"
-          />
-          <rect
-            x="24"
-            y="32"
-            width="20"
-            height="62"
-            fill="none"
-            stroke="#888"
-            strokeWidth="0.6"
-            opacity="0.55"
-          />
-          <line
-            x1="34"
-            y1="18"
-            x2="34"
-            y2="32"
-            stroke="#bbb"
-            strokeWidth="0.4"
-            opacity="0.4"
-          />
-          <rect
-            x="48"
-            y="20"
-            width="14"
-            height="74"
-            fill="none"
-            stroke="#999"
-            strokeWidth="0.6"
-            opacity="0.6"
-          />
-          <rect
-            x="66"
-            y="38"
-            width="16"
-            height="56"
-            fill="none"
-            stroke="#777"
-            strokeWidth="0.5"
-            opacity="0.45"
-          />
-          <rect
-            x="86"
-            y="28"
-            width="12"
-            height="66"
-            fill="none"
-            stroke="#888"
-            strokeWidth="0.6"
-            opacity="0.55"
-          />
-          <rect
-            x="102"
-            y="44"
-            width="13"
-            height="50"
-            fill="none"
-            stroke="#666"
-            strokeWidth="0.5"
-            opacity="0.4"
-          />
-          <line
-            x1="0"
-            y1="94"
-            x2="120"
-            y2="94"
-            stroke="#555"
-            strokeWidth="0.5"
-            opacity="0.4"
-          />
-        </svg>
-      ),
-    },
+    { id: 0, image: "/sketches/0.jpeg", title: "Figure Study" },
+    { id: 1, image: "/sketches/1.jpeg", title: "Portrait · charcoal" },
+    { id: 2, image: "/sketches/2.jpeg", title: "Eye study" },
+    { id: 3, image: "/sketches/3.jpeg", title: "City · ink" },
+    { id: 4, image: "/sketches/4.jpeg", title: "Study #4" },
+    { id: 5, image: "/sketches/5.jpeg", title: "Study #5" },
+    { id: 6, image: "/sketches/6.jpeg", title: "Study #6" },
+    { id: 7, image: "/sketches/7.jpeg", title: "Study #7" },
   ];
 
   return (
@@ -338,14 +44,25 @@ function Sketches() {
           <span className="block italic text-white/40">built in code.</span>
         </h3>
 
-        {/* Sketches Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+        {/* Masonry Grid */}
+        <div className="columns-2 md:columns-3 lg:columns-4 gap-3 md:gap-4 space-y-3 md:space-y-4">
           {sketches.map((sketch) => (
             <div
               key={sketch.id}
-              className="group relative rounded-sm overflow-hidden cursor-pointer"
+              className="group relative rounded-sm overflow-hidden cursor-pointer break-inside-avoid"
             >
-              <div className="w-full aspect-[3/4]">{sketch.svg}</div>
+              <div className="relative w-full">
+                <Image
+                  src={sketch.image}
+                  alt={sketch.title}
+                  width={400}
+                  height={500}
+                  className="w-full h-auto object-cover"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMCwsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABwYI/8QAJRAAAgEDAwUBAAAAAAAAAAAAAQIDBAURBiASIQcxQWFxgf/EABUBAQEAAAAAAAAAAAAAAAAAAAAE/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AqdOagtlBpymp6m4UsE0MSpJHJMispCjggE8jwV0dN6hoNSWyG6W2oWelp5CscipjJABPH6I/WK4rqtPVRVVFTU4qYY5XhV5JApYgEgEgDAHyAP7rS0dW01HpPTWnoJRLTU8ESTGMY3bRhuH5ycmsKrqY4lZ//2Q=="
+                />
+              </div>
               {/* Hover overlay */}
               <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-sm">
                 <span className="font-mono text-[8px] md:text-[10px] tracking-[0.15em] uppercase text-white/70">

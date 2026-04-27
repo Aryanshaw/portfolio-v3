@@ -22,7 +22,7 @@ function RightSide() {
         </div>
 
         {/* Work section */}
-        <div className="px-8 md:px-16 lg:px-24 flex flex-col gap-14">
+        <div className="px-8 md:px-16 lg:px-24 flex flex-col gap-14 mb-14">
           <div className="h-[2px] bg-text-ghost/40"></div>
           <Work />
         </div>
