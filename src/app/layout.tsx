@@ -17,21 +17,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Talk to me",
-  description: "lorem ipsum dolor sit amet",
+  title: "Aryan's portfolio",
+  description: "This is aryan's portfolio",
 
   openGraph: {
-    title: "Talk to me",
-    description: "lorem ipsum dolor sit amet",
+    title: "Aryan's portfolio",
+    description: "This is aryan's portfolio",
     url: "https://talktome.com",
-    siteName: "Talk to me",
+    siteName: "Aryan's portfolio",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Talk to me",
-    description: "lorem ipsum dolor sit amet",
+    title: "Aryan's portfolio",
+    description: "This is aryan's portfolio",
   },
 };
 
