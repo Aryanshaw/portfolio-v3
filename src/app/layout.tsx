@@ -19,6 +19,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Aryan | Software developer",
   description: "This is aryan's portfolio",
+  icons: {
+    icon: "/logo.svg",
+  },
 
   openGraph: {
     title: "Aryan | Software developer",
@@ -46,7 +49,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning
       >
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
           {/* <AuthProvider> */}
           <DevtoolsProvider>{children}</DevtoolsProvider>
           {/* </AuthProvider> */}
