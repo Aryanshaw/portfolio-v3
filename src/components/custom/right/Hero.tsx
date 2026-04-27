@@ -16,23 +16,38 @@ function Hero() {
         </div>
 
         {/* Hero Title */}
-        <h1 className="font-serif text-xl md:text-2xl lg:text-7xl text-text-primary leading-[1.05] tracking-tight mb-8 md:mb-12">
+        <h1 className="font-serif text-[28px] md:text-3xl lg:text-7xl text-text-primary leading-[1.05] tracking-tight mb-8 md:mb-12">
           <span className="block">Fullstack AI</span>
-          <span className="block italic text-text-secondary/90">engineer &</span>
+          <span className="block italic text-text-secondary/90">
+            engineer &
+          </span>
           <span className="block">builder.</span>
         </h1>
 
         {/* Bio */}
         <p className="font-sans text-sm md:text-md lg:text-lg text-text-secondary leading-relaxed max-w-xl md:max-w-2xl mb-12 md:mb-16">
-          I build things that scale — from GenAI workflows to full-stack products. AI first, always.
+          I build things that scale — from GenAI workflows to full-stack
+          products. AI first, always.
         </p>
 
         {/* CTAs */}
         <div className="flex flex-wrap gap-4 mb-24 md:mb-32">
-          <button className="bg-text-primary cursor-pointer text-off-white font-mono text-xs md:text-sm lg:text-md tracking-widest uppercase px-10 py-5 rounded-sm hover:bg-zinc-800 transition-all duration-300 transform hover:-translate-y-1">
-            View work
-          </button>
-          <button className="bg-white text-text-primary cursor-pointer border border-text-ghost/50 font-mono text-xs md:text-sm lg:text-md tracking-widest uppercase px-10 py-5 rounded-sm hover:border-text-secondary transition-all duration-300 transform hover:-translate-y-1">
+          <a
+            href="/Aryan_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-text-primary cursor-pointer text-off-white font-mono text-xs md:text-sm lg:text-md tracking-widest uppercase px-10 py-5 rounded-sm hover:bg-zinc-800 transition-all duration-300 transform hover:-translate-y-1 inline-block"
+          >
+            View resume
+          </a>
+          <button
+            onClick={() =>
+              document
+                .getElementById("contact")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="bg-white text-text-primary cursor-pointer border border-text-ghost/50 font-mono text-xs md:text-sm lg:text-md tracking-widest uppercase px-10 py-5 rounded-sm hover:border-text-secondary transition-all duration-300 transform hover:-translate-y-1"
+          >
             Say hello
           </button>
         </div>
