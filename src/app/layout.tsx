@@ -18,13 +18,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Talk to me",
-  description:
-    "lorem ipsum dolor sit amet",
+  description: "lorem ipsum dolor sit amet",
 
   openGraph: {
     title: "Talk to me",
-    description:
-      "lorem ipsum dolor sit amet",
+    description: "lorem ipsum dolor sit amet",
     url: "https://talktome.com",
     siteName: "Talk to me",
     type: "website",
@@ -33,8 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Talk to me",
-    description:
-      "lorem ipsum dolor sit amet",
+    description: "lorem ipsum dolor sit amet",
   },
 };
 
@@ -49,14 +46,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           {/* <AuthProvider> */}
-            <DevtoolsProvider>{children}</DevtoolsProvider>
+          <DevtoolsProvider>{children}</DevtoolsProvider>
           {/* </AuthProvider> */}
         </ThemeProvider>
         <Analytics />
